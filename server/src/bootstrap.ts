@@ -2,6 +2,7 @@ import type { Core } from '@strapi/strapi';
 import { permissionsActions } from './permissions-actions';
 
 export default async ({ strapi }: { strapi: Core.Strapi }) => {
+  console.log('🚀 [ALGOLIA PLUGIN] Loading from LOCAL FORK - yarn link is working!');
   const strapiAlgolia = strapi.plugin('strapi-algolia');
 
   try {
